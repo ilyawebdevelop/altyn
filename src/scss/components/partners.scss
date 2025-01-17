@@ -1,0 +1,39 @@
+.partners {
+  background-color: #F4F9F9;
+  .sectHead {
+    margin-bottom: 30px;
+  }
+  &Descr {
+    font-weight: 300;
+    color: #505050;
+  }
+  &Slide {
+    &Logo {
+      height: 150px;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 30px;
+      padding-right: 30px;
+      border-radius: 12px;      
+      &:not(:last-child){
+        margin-bottom: 20px;
+      }
+      img {
+        object-fit: contain;        
+        max-width: 242px;
+        width: 100%;
+      }
+    }
+  }
+}
+.partnersSliderW {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 80px;
+}
+.partners-abstract {
+  background: #F4F9F9 url('@img/partners/abstract.svg') no-repeat center center / contain;
+}

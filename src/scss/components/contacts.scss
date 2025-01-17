@@ -1,0 +1,34 @@
+.contacts {
+  &Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    height: 100%;
+    background: linear-gradient(0deg, #F4F9F9 0%, #F4F9F9 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;    
+  }
+  &Map {
+    iframe {
+      height: 600px;
+      width: 100%;
+    }
+  }
+  &Item {
+    font-size: 20px; 
+    font-weight: 300;
+    line-height: 145%;  
+    img {
+      width: 28px;
+    }
+    &:hover {
+      color: var(--green);
+    }
+  }
+  &List {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}

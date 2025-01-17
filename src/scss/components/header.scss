@@ -1,0 +1,83 @@
+// Header
+.header {
+  background-color: #1B554E;
+  padding-top: 15px;
+  padding-bottom: 12px;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  &W {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+
+  .logo {
+    img {
+      width: 160px;
+    }
+  }
+
+  &Phone {
+    text-align: end;
+    margin-left: auto;
+    display: block;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: normal;
+    border-bottom: 1px solid transparent;
+    transition: border-color .2s linear;
+    width: fit-content;
+    &:hover {
+      border-color: #fff;
+    }
+  }
+
+  &Address {
+    text-align: end;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: normal;
+
+    @media(max-width: 1699px) {
+      font-size: 13px;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      justify-content: center;
+      column-gap: 40px;
+      @media(max-width: 1400px){
+        column-gap: 20px;
+      }
+
+      li {
+        a {
+          font-size: 18px;
+          line-height: normal;
+          border-bottom: 1px solid transparent;
+          transition: border-color .2s linear;
+          &:hover {
+            border-color: #fff;
+          }
+          @media(max-width: 1400px){
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  &--main {
+    background-color: transparent;
+  }
+  &.fixed {
+    background-color: #1B554E;
+    transition: all .2s linear;
+  }
+}

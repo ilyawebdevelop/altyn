@@ -1,0 +1,56 @@
+<section class="productSect sect">
+  <div class="container">
+
+    <div class="sectHead d-flex justify-content-between align-items-center">
+      <h2 class="h2">
+        наша продукция
+      </h2>
+      <a href="#" class="button button--green">
+        Посмотреть все
+        <img src="@img/icons/btn-arrow.svg" alt="icon">
+      </a>
+    </div>
+
+    <div class="productSliderW">
+
+      <div class="swiper productSlider">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide productSlide">
+            @@include('../catalog/product-card-1.html',{})
+          </div>
+
+          <div class="swiper-slide productSlide">
+            @@include('../catalog/product-card-2.html',{})
+          </div>
+
+          <div class="swiper-slide productSlide">
+            @@include('../catalog/product-card-3.html',{})
+          </div>
+
+          <div class="swiper-slide productSlide">
+            @@include('../catalog/product-card-4.html',{})
+          </div>
+
+          <div class="swiper-slide productSlide">
+            @@include('../catalog/product-card-3.html',{})
+          </div>
+
+          <div class="swiper-slide productSlide">
+            @@include('../catalog/product-card-4.html',{})
+          </div>
+
+        </div>
+      </div>
+
+      <div class="navArrow--absolute">
+        <button class="navArrow navArrowPrev"></button>
+        <button class="navArrow navArrowNext"></button>
+      </div>
+
+    </div>
+
+    <img class="productSectLogo" src="@img/logo/product-sect-logo.svg" alt="logo">
+
+  </div>
+</section>

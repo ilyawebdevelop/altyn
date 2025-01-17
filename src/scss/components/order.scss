@@ -1,0 +1,51 @@
+.order {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #1B554E;
+  overflow: hidden;
+  .container {
+    position: relative;
+  }
+
+  .h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  &W {
+    max-width: 795px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &Grid {
+    display: flex;
+    column-gap: 20px;
+
+    .inputW {
+      .formInput {
+        width: 300px;
+        background: rgba(255, 255, 255, 0.20);
+        border-color: transparent;
+        border-radius: 100px;
+        color: #fff;
+        font-weight: 300;
+        &::placeholder {
+          color: #fff;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  .abstractL {
+    position: absolute;
+    left: -200px;
+    top: -270px;
+  }
+  .abstractR {
+    position: absolute;
+    right: -200px;
+    top: -270px;
+  }
+}

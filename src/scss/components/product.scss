@@ -1,0 +1,62 @@
+.productSlider {
+  &W {
+    position: relative;
+
+  }
+}
+
+.productSect {
+  background-color: #F4F9F9;
+
+  .container {
+    position: relative;
+  }
+
+  .productSectLogo {
+    position: absolute;
+    top: -80px;
+    left: -130px;
+  }
+}
+
+.productSlide {
+  height: auto;
+
+  .productCard {
+    height: 100%;
+  }
+}
+
+.catalogMainW {
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 1155px;
+    height: 606px;
+    background: url('@img/decor/milk.png') no-repeat center  center / contain;
+    position: absolute;
+    top: 676px;
+    left: -300px;
+  }
+}
+.shopGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  .productCard {
+    grid-column: 3 span;
+  }
+}
+.shopSect {
+  background-color: #F4F9F9;
+}
+.productTitle{
+  margin-bottom: 30px;
+}
+.productDescr{
+  color: #505050; 
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px; 
+}

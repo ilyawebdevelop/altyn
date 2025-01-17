@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Продукт"
+})
+
+<body>
+
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main class="main">
+			@@include('html/product/main.html',{})
+			@@include('html/product/about.html',{})
+			@@include('html/product/video.html',{})
+			@@include('html/product/adv.html',{})
+			@@include('html/order.html',{})
+
+		</main>
+		@@include('html/footer.html',{})
+		@@include('html/modal.html',{})
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

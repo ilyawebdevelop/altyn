@@ -1,0 +1,45 @@
+.adv {
+  .tabs {
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      &-btn {
+        min-width: 395px;
+      }
+    }
+  }
+  &Grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 60px;
+    padding-left: 20px;
+  }
+  &Item {
+    grid-column: 4 span;
+    &Icon {
+      border-radius: 10px;
+      background: #FDF0C5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 70px;
+      height: 70px;
+      margin-bottom: 20px;
+      img {
+        width: 28px;
+      }      
+    }
+    &Title {
+      margin-bottom: 10px;      
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 150%;
+    }
+    &Descr {
+      color: #505050;
+      font-weight: 300;
+      line-height: 145%;  
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.tabs {
+  &__nav {
+    display: flex;
+    column-gap: 16px;
+    padding: 4px;
+    background-color: var(--background);
+    width: fit-content;
+    border-radius: 15px;
+
+    &-btn {
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      line-height: 24px;
+      border-radius: 10px;
+      padding-left: 36px;
+      padding-right: 36px;
+      background-color: #E7F0F0;
+      transition: background-color .2s linear, color .2s linear;
+      &:hover {
+        background-color: #1B554E;
+        color: #fff;
+      }
+      &--active {
+        background-color: #1B554E;
+        color: #fff;
+        pointer-events: none;
+      }
+    }
+  }
+  &__panel {
+    display: none;
+    &--active {
+      display: block;
+    }
+  }
+}

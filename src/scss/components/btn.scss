@@ -1,0 +1,137 @@
+// btn
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  transition: background-color .2s linear, color .2s linear;
+  column-gap: 10px;
+  height: 50px;
+  padding-left: 26px;
+  padding-right: 26px;
+  border-radius: 100px;
+
+  &--md {
+    height: 60px;
+  }
+
+  &--lg {
+    height: 65px;
+
+    @media(max-width: 991px) {
+      height: 50px;
+    }
+  }
+
+  &--white {
+    background-color: #fff;
+  }
+
+  &--yellow {
+    background-color: var(--yellow);
+
+    &:hover {
+      background-color: #FDF0C5;
+    }
+  }
+
+  &--green {
+    background-color: #1B554E;
+    color: #fff;
+
+    &:hover {
+      background-color: #123834;
+    }
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    stroke: #000;
+  }
+}
+
+.introBtn {
+  margin-top: 30px;
+}
+
+.productCardBtn {
+  color: #239385;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+
+  &:hover {
+    .btn-arrow-round {
+      transform: translateX(5px);
+    }
+  }
+
+  .btn-arrow-round {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #239385;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .2s linear;
+  }
+}
+
+.aboutVideoBtn {
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.50);
+  box-shadow: 0px 0px 20px 0px #FCE9AC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: background-color .2s linear;
+}
+
+.aboutActionBtn {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -27px;
+    right: 66px;
+    width: 141px;
+    height: 28px;
+    background: url('@img/icons/arrow-big.svg') no-repeat center center / 141px;
+  }
+  span {
+    font-weight: 500;
+    line-height: 120%;
+    color: #FDF0C5;
+    max-width: 105px;
+  }
+
+  &Icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(253, 240, 197, 0.30);
+    img {
+      width: 15px;
+    }
+  }
+}
+.orderBtn {
+  height: 55px;
+}
+.shopBtn{
+  position: relative;
+  z-index: 1;
+}

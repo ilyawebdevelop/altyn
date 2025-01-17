@@ -1,0 +1,113 @@
+// Footer
+.footer {
+  background-color: #112B27;
+
+  &T {
+    border-bottom: 1px solid #123834;
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+  &B {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .copyright, .politic, .develop {
+    color: #8DAAA6;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: normal;    
+  }
+  .politic, .develop {
+    &:hover {
+      color: #fff;
+    }
+  }
+  .develop {
+ 
+  }
+  &Logo {
+    margin-bottom: 40px;
+    display: block;
+    &:hover {
+      opacity: .85;
+    }
+    &Descr {
+      font-size: 15px;
+      font-weight: 300;
+      color: #8DAAA6;
+      max-width: 315px;
+    }
+    img {
+      width: 235px;
+    }
+  }
+  &Title {
+    color: #8DAAA6;    
+    font-size: 15px;
+    font-weight: 300;
+    line-height: normal;    
+    margin-bottom: 30px;
+  }
+  &Phone {
+    color: #FFF;
+    font-size: 24px;   
+    line-height: 145%;     
+    margin-bottom: 10px;
+    display: block;
+    &:hover {
+      color: var(--yellow);
+    }
+  }
+}
+.footerSocialsLink {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background: #1B554E;
+  backdrop-filter: blur(2px);
+  transition: background-color .2s linear;
+  &:hover {
+    background-color: #123834;
+  }
+}
+.footerSocials {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footerAddress {
+  color: #fff;
+  line-height: 145%;
+  max-width: 195px;
+}
+.footerNavW{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  column-gap: 80px;
+}
+.footerNav {
+  width: 220px;
+
+  ul {
+    li {
+      &:not(:last-child){
+        margin-bottom: 15px;
+      }
+      a {
+        color: #fff;
+        line-height: 145%;
+        &:hover {
+          color: var(--yellow);
+        }
+      }
+    }
+  }
+}
+.footerContacts{
+  width: 235px;
+  margin-left: auto;
+  margin-right: 50px;
+}

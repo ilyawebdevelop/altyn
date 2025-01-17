@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Главная"
+})
+
+<body>
+
+	<div class="wrapper">
+		@@include('html/header-main.html',{})
+		<main class="main">
+			@@include('html/main/intro.html',{})
+			<div class="catalogMainW">
+				@@include('html/main/catalog.html',{})
+				@@include('html/main/about.html',{})
+			</div>
+			@@include('html/main/partners.html',{})
+			@@include('html/main/adv.html',{})
+			@@include('html/main/news.html',{})
+			@@include('html/contacts.html',{})
+			@@include('html/order.html',{})
+
+		</main>
+		@@include('html/footer.html',{})
+		@@include('html/modal.html',{})
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

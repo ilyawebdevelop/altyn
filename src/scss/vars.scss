@@ -1,0 +1,31 @@
+// Font-weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
+
+ // Containers
+:root { 
+  --content-width: 1820px;
+  --content-fluid-width: 1700px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+  --font-family: "Noto Sans", serif;
+  --font-family-second: 'Architectural';
+  --gray: #D7E1E0;
+  --bg-light: #D7E1E0;
+  --main-color: #000;
+  --black-light: #505050;
+  --green: #239385;
+  --green-light: #E7F0F0;
+  --green-dark: #1B554E;
+  --success: #27c340;
+  --error: #e02828;
+  --yellow: #FCE9AC;
+  --yellow-2: #FDF0C5;
+  --disabled: #c5cfdc;
+}

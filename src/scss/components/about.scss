@@ -1,0 +1,93 @@
+.about {
+  overflow: hidden;
+  background-color: #F4F9F9;
+  &W {
+    position: relative;
+  }
+  &Video {
+    position: absolute;
+    top: 220px;
+    left: 0;
+    width: fit-content;
+    z-index: 1;
+    cursor: pointer;
+    &:hover {
+      .aboutVideoBtn {
+        background: rgba(0, 0, 0, 0.80);
+      }
+    }
+    &Img {
+      height: 455px;
+      width: 810px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+  &Content {
+    background-color: #1B554E;
+    border-radius: 10px 0px 0px 0px;
+    padding: 90px 0 90px 220px;
+    width: fit-content;
+    margin-left: auto;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 100%;
+      top: 0;
+      background-color: #1B554E;
+    }
+    .h2 {
+      color: #fff;
+      margin-bottom: 30px;
+      line-height: 150%;
+    }
+  }
+  &Descr {
+    color: #D7E1E0;
+  }
+  &Inner {
+    max-width: 750px;
+  }
+  &Action {
+    column-gap: 60px;
+    margin-top: 50px;
+  }
+}
+.aboutBtnGetPrice{
+  padding-left: 36px;
+  padding-right: 36px;
+}
+.about-default{
+  background-color: #F4F9F9;
+  .container {
+    position: relative;
+    .about-default-logo {
+      position: absolute;
+      left: -130px;
+      top: -100px;
+    }
+  }
+  .aboutVideo {
+    position: relative;
+    top: unset;
+    right: unset;
+    left: unset;
+    bottom: unset;
+    width: 50%;
+  }
+}
+.about-default-content{
+  width: 50%;
+  padding-left: 60px;
+  .h2 {
+    margin-bottom: 30px;
+  }
+  .content {
+    font-weight: 300;
+    color: #505050;
+    line-height: 145%;
+  }
+}
