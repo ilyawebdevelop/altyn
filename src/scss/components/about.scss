@@ -1,9 +1,11 @@
 .about {
   overflow: hidden;
   background-color: #F4F9F9;
+
   &W {
     position: relative;
   }
+
   &Video {
     position: absolute;
     top: 220px;
@@ -11,11 +13,13 @@
     width: fit-content;
     z-index: 1;
     cursor: pointer;
+
     &:hover {
       .aboutVideoBtn {
         background: rgba(0, 0, 0, 0.80);
       }
     }
+
     &Img {
       height: 455px;
       width: 810px;
@@ -23,6 +27,7 @@
       object-fit: cover;
     }
   }
+
   &Content {
     background-color: #1B554E;
     border-radius: 10px 0px 0px 0px;
@@ -30,6 +35,7 @@
     width: fit-content;
     margin-left: auto;
     position: relative;
+
     &::before {
       content: '';
       position: absolute;
@@ -39,37 +45,46 @@
       top: 0;
       background-color: #1B554E;
     }
+
     .h2 {
       color: #fff;
       margin-bottom: 30px;
       line-height: 150%;
     }
   }
+
   &Descr {
     color: #D7E1E0;
   }
+
   &Inner {
     max-width: 750px;
   }
+
   &Action {
     column-gap: 60px;
     margin-top: 50px;
   }
 }
-.aboutBtnGetPrice{
+
+.aboutBtnGetPrice {
   padding-left: 36px;
   padding-right: 36px;
 }
-.about-default{
+
+.about-default {
   background-color: #F4F9F9;
+
   .container {
     position: relative;
+
     .about-default-logo {
       position: absolute;
       left: -130px;
       top: -100px;
     }
   }
+
   .aboutVideo {
     position: relative;
     top: unset;
@@ -79,15 +94,166 @@
     width: 50%;
   }
 }
-.about-default-content{
+
+.about-default-content {
   width: 50%;
   padding-left: 60px;
+
   .h2 {
     margin-bottom: 30px;
   }
+
   .content {
     font-weight: 300;
     color: #505050;
     line-height: 145%;
   }
+}
+
+.about-product {
+  background-color: #DEEEEC;
+  position: relative;
+  padding-top: 160px;
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &-wrapper {
+    display: flex;
+    column-gap: 60px;
+    justify-content: space-between;
+  }
+
+  &-image {
+    width: 950px;
+    position: relative;
+    left: 100px;
+
+    &-wrapper {
+      position: relative;
+    }
+  }
+
+  &-content {
+    .h2 {
+      margin-bottom: 30px;
+    }
+
+    .content {
+      max-width: 650px;
+      color: #505050;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 150%;
+      overflow: hidden;
+      -webkit-line-clamp: 11;
+      display: -webkit-box;
+      /* Включаем флексбоксы */
+      -webkit-box-orient: vertical;
+
+      /* Вертикальная ориентация */
+      &.show {
+        -webkit-line-clamp: unset;
+      }
+    }
+  }
+
+  &-item {
+
+    display: none;
+
+    &-wrapper {
+      position: absolute;
+      z-index: 1;
+
+      &:nth-child(1) {
+        right: 320px;
+        top: 61px;
+      }
+
+      &:nth-child(2) {
+        top: 287px;
+        right: 530px;
+      }
+
+      &:nth-child(3) {
+        top: 406px;
+        right: 275px;
+      }
+    }
+  }
+}
+
+.about-top-decor {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  top: 0;
+  width: 100%;
+}
+
+.tippy-box {
+  border-radius: 8px;
+  border: 5px solid rgba(35, 147, 133, 0.2);
+  background: #FFF;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  width: fit-content;
+  max-width: 340px;
+  color: unset;
+  margin-left: 40px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -17px;
+    left: -13px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba($color: #1B554E, $alpha: .5);
+  }
+
+  .tippy-content {
+    padding: 0;
+  }
+
+  strong {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  span {
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+}
+
+.about-decor-lg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.about-product-btn-info {
+  max-width: 140px;
+  position: absolute;
+  bottom: 158px;
+  left: 17px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -22px;
+    left: 30px;
+    width: 141px;
+    height: 28px;
+    background: url('@img/icons/about-big-arrow.svg') no-repeat center center / contain;
+  }
+
 }

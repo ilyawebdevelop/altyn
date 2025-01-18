@@ -34,29 +34,147 @@
     content: '';
     width: 1155px;
     height: 606px;
-    background: url('@img/decor/milk.png') no-repeat center  center / contain;
+    background: url('@img/decor/milk.png') no-repeat center center / contain;
     position: absolute;
     top: 676px;
     left: -300px;
   }
 }
+
 .shopGrid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 20px;
+
   .productCard {
     grid-column: 3 span;
   }
 }
+
 .shopSect {
   background-color: #F4F9F9;
 }
-.productTitle{
+
+.productTitle {
   margin-bottom: 30px;
 }
-.productDescr{
-  color: #505050; 
+
+.productDescr {
+  color: #505050;
   font-size: 18px;
   font-weight: 300;
-  line-height: 27px; 
+  line-height: 27px;
+}
+
+.productTerminItem {
+  width: fit-content;
+  min-width: 117px;
+}
+
+.productTerminItemT {
+  padding: 14px 12px 10px 12px;
+  border-radius: 20px 20px 0px 0px;
+  background: #DEEEEC;
+}
+
+.productTerminItemB {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 150%;
+  border-radius: 0px 0px 20px 20px;
+  background: #FDF7E3;
+  padding: 6px 12px 14px 12px;
+
+}
+
+.productTerminItemTemp {
+  font-size: 22px;
+  line-height: 150%;
+}
+
+.productTerminItemSecond {
+  color: rgba(0, 0, 0, 0.60);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 150%;
+  margin-bottom: 3px;
+}
+
+.productSect {
+  position: relative;
+  background-color: #fff;
+}
+
+.productDecor {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 368px;
+}
+
+.productMainSlide {
+  img {
+    height: 670px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+}
+
+.productContent {
+  padding-left: 40px;
+}
+
+.productThumbSlider {
+  height: calc(580px);
+}
+
+.productThumbSliderW {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  flex-shrink: 0;
+
+  .navArrow {
+    background-image: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &Next {
+      background-size: 18px;
+
+      &:hover {
+        background-image: url('@img/icons/arrow-down-white.svg');
+
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.productThumbSlide {
+  cursor: pointer;
+  border: 1px solid rgba(35, 147, 133, 0.10);
+  border-radius: 8px;
+  transition: border-color .2s linear;
+  &:hover {
+    border-color: #1B554E;
+  }
+
+  &.swiper-slide-thumb-active {
+    border-color: #1B554E;
+  }
+
+  img {
+    border-radius: 8px;
+    width: 100px;
+    height: 100%;
+  }
 }

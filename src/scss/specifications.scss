@@ -253,9 +253,15 @@ h3,
     opacity: 1;
   }
 }
+
 .text {
   &--green {
     color: var(--green);
+  }
+
+  &--lg {
+    font-size: 18px;
+    line-height: 150%;
   }
 }
 
@@ -292,10 +298,12 @@ h3,
   background-position: center;
   background-size: 8px;
   transition: background-color .2s linear;
+
   &.swiper-button-disabled {
     pointer-events: none;
     opacity: .4;
   }
+
   &:hover {
     background-color: #1B554E;
   }
@@ -303,6 +311,7 @@ h3,
   &Prev {
     background-image: url('@img/icons/arrow-prev.svg');
   }
+
   &Next {
     background-image: url('@img/icons/arrow-next.svg');
   }
@@ -325,10 +334,25 @@ h3,
   }
 
 }
+
 .pageHead {
   padding-top: 30px;
   padding-bottom: 50px;
 }
+
 .firstSect {
   padding-top: 80px;
+}
+
+.loadmore {
+  color: #1B554E;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
 }

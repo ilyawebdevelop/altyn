@@ -27,7 +27,8 @@
 		"punycode": "^2.3.0",
 		"rellax": "^1.12.1",
 		"smooth-scroll": "^16.1.3",
-		"swiped-events": "^1.1.6"
+		"swiped-events": "^1.1.6",
+		"tippy.js": "^6.3.7"
 	},
 	"devDependencies": {
 		"browser-sync": "latest",
